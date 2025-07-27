@@ -4,27 +4,203 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form1</title>
+    <link rel="stylesheet" href="form1.css">
+
 </head>
 <body>
-    <h2> Donor Information</h2>
 
-    <form>
-        <div class="form-group">
-            <label for="donorName">Donor Name:</label>
-            <label> First Name*<input type="text" required/></label>
-            <label> Last Name*<input type="text" required/></label>
-            <label> Company*<input type="text" required/></label>
-            <label> Address 1*<input type="text" required/></label>
-            <label> Address 2*<input type="text"/></label>
-            <label> City*<input type="text" required/></label>
-            <label> State*<input type="text" required/></label>
-            <label> Zip Code*<input type="text" required/></label>
-            <label> Phone*<input type="tel" required/></label>
-            <label> Fax*<input type="tel"/></label>
-            <label> Email*<input type="email" required/></label>
-            
+      <section>
+        <form method="GET">
+            <h2>Donor Information</h2>
+            <div class="donorInformation">
+                <div class="form-group">
+                    <label for="firstName">First Name* </label>
+                    <input type="text" id="firstName" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name* </label>
+                    <input type="text" id="lastName" required>
+                </div>
+                <div class="form-group">
+                    <label for="company">Company </label>
+                    <input type="text" id="company">
+                </div>
+                <div class="form-group">
+                    <label for="address1">Address 1* </label>
+                    <input type="text" id="address1" required>
+                </div>
+                <div class="form-group">
+                    <label for="address2">Address 2* </label>
+                    <input type="text" id="address2">
+                </div>
+                <div class="form-group">
+                    <label for="city">City*</label>
+                    <input type="text" id="city" required>
+                </div>
+                <div class="form-group">
+                    <label for="state">State*</label>
+                    <select name="state" id="state" required>
+                        <option selected disabled>Select a State</option>
+                        <option value="dhaka" required>Dhaka</option>
+                        <option value="khulna">khulna</option>
+                        <option value="barishal">Barishal</option>
+                        <option value="sylet">Sylet</option>
+                        <option value="chattogram">Chattogram</option>
+                        <option value="rajshahi">Rajshahi</option>
+                        <option value="mymensingh">Mymensingh</option>
+                        <option value="rangput">Rangpur</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="zipCode">Zip Code*</label>
+                    <input type="number" name="zipCode" id="zipCode" required>
+                </div>
+                <div class="form-group">
+                    <label for="country">Country* </label>
+                    <select name="country" id="countrySelect" required>
+                        <option selected disabled>Select a Country</option>
+                        <option value="bangladesh">Bangladesh</option>
+                        <option value="india">India</option>
+                        <option value="nepal">Nepal</option>
+                        <option value="pakistan">Pakistan</option>
+                        <option value="sriLanka">Sri-Lanka</option>
+                        <option value="usa">USA</option>
+                        <option value="uk">UK</option>
+                        <option value="australia">Australia</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone </label>
+                    <input type="number" id="phone">
+                </div>
+                <div class="form-group">
+                    <label for="fax">Fax </label>
+                    <input type="text" id="fax">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email* </label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="donationAmount">Donation Amount* </label>
+                    <p>(Check a button or type In your amount)</p>
+                    <input type="radio" name="Amount" id="" required> None
+                    <input type="radio" name="Amount" id=""> $50
+                    <input type="radio" name="Amount" id=""> $75
+                    <input type="radio" name="Amount" id=""> $100
+                    <input type="radio" name="Amount" id=""> $250
+                    <input type="radio" name="Amount" id=""> Other <br>
+                    
+                </div>
+                <div class="form-group">
+                    <label for="otherAmount">Other Amount $ </label>
+                    <input type="number" name="amount" id="amount">
+                </div>
+                <div class="form-group">
+                    <label for="recurringDonation">Recurring Donation </label>
+                    <p>(Check if yes)</p>
+                    <input type="checkbox" name="recurringDonation" id="recurringDonation"> I am interested in giving on
+                    a regular basis.
+                    
+                </div>
+                <div class="form-group">
+                    
+                    <label for="monthlyCreditCard"><br>Monthly Credit Card $</label>
+                    <input type="number" name="money" id=""><br> For
+                    <input type="number"><br> Months
+                </div>
+            </div>
+            <h2>Honorarium and Memorial Donation Information</h2>
+            <div class="honorariumAndMemorialDonationInfo">
+                <div class="form-group">
+                    <label for="donationFor">I would like to make this donation</label>
+                    <input type="radio" name="donationFor" value="toHonor"> To Honor <br>
+                    <input type="radio" name="donationFor" value="inMemoryOf"> In Memory of <br>
+                </div>
+                <div class="form-group">
+                    <label for="name">Name </label>
+                    <input type="text" id="name">
+                </div>
+                <div class="form-group">
+                    <label for="acknowledgeDonation">Acknowledge Donation</label>
+                    <input type="text" name="acknowledgeDonation" id="acknowledgeDonation">
+                </div>
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <input type="text" name="address" id="address">
+                </div>
+                <div class="form-group">
+                    <label for="city" id="">City </label>
+                    <input type="text" id="city2">
+                </div>
+                <div class="form-group">
+                    <label for="state">State*</label>
+                    <select name="state" id="state" required>
+                        <option selected disabled>Select a State</option>
+                        <option value="dhaka" required>Dhaka</option>
+                        <option value="khulna">khulna</option>
+                        <option value="barishal">Barishal</option>
+                        <option value="sylet">Sylet</option>
+                        <option value="chattogram">Chattogram</option>
+                        <option value="rajshahi">Rajshahi</option>
+                        <option value="mymensingh">Mymensingh</option>
+                        <option value="rangput">Rangpur</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="zip">Zip </label>
+                    <input type="number">
+                </div>
+            </div>
+            <h2>Additional Information</h2>
+            <div class="additionalInfo">
+                <p>Please enter your name, company or organization as you would like it to appear in our publications:
+                </p>
+                <div class="form-group">
+                    <label for="additionalInfoName">Name </label>
+                    <input type="text" name="name" id="additionalInfo">
+                </div>
+                <div class="form-group checkbox-group">
+                    <label style="width:170px; min-width:170px; padding-right:10px;"></label>
+                    <div style="flex:1; display:flex; flex-direction:column; gap:2px;">
+                        <span><input type="checkbox" name="" id=""> I would like my gift to remain anonymous.</span>
+                        <span><input type="checkbox"> My employer offers a matching gift program. I will mail the matching gift form.</span>
+                        <span><input type="checkbox"> Please save the cost of acknowledging this gift by not mailing a thank you letter.</span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="comments">Comments </label>
+                    
+                    <textarea id="comment" name="comment" rows="5" cols="50"></textarea><br>
+                    
+                </div>
+                <p>(Please type any questions or feedback here)</p>
+                <label for="contact" style="width:170px; min-width:170px; padding-left:10px;">How may we contact you?</label>
+                <div class="form-group checkbox-group">
+                    
+                    <div style="flex:1; display:flex; flex-direction:column; gap:2px;">
+                        <span><input type="checkbox" name="email" id="contactEmail"> E-mail</span>
+                        <span><input type="checkbox" name="postalMail" id="postalMail"> Postal Mail</span>
+                        <span><input type="checkbox" name="telephone" id="telephone"> Telephone</span>
+                        <span><input type="checkbox" name="fax" id="fax"> Fax</span>
+                        <p style="margin:5px 0 0 0;">I would like to receive newsletters and information about special events by:</p>
+                        <span><input type="checkbox" name="receiveEmail" id="receiveEmail"> E-mail</span>
+                        <span><input type="checkbox" name="receivePostalMail" id="receivePostalMail"> Postal Mail</span>
+                        <span><input type="checkbox" id="volunter"> I would like information about volunteering with the</span>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            <div class="button">
+                <button class="resetBtn button">Reset</button>
+                <button class="continueBtn button">Continue</button>
+            </div>
+        </form>
 
+    </section>
 
-    </form>
+    <footer>
+
+    </footer>
 </body>
 </html>
