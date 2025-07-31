@@ -1,0 +1,72 @@
+ body{
+    background-color: rgb(121, 192, 218);
+}
+
+section {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.Experience {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #d6e0e3;
+    border: 1px solid #1b1707;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+
+.Experience .image {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.Experience .image img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+
+.Experience .text {
+    flex: 2;
+    padding: 10px 20px;
+}
+
+.Experience .text h1 {
+    font-size: 20px;
+    color: #4ab4cf;
+    margin-bottom: 15px;
+}
+
+.Experience .text ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.Experience .text ul li {
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #313132;
+}
+
+.Experience .text ul li p {
+    display: inline;
+    font-weight: normal;
+    color: #454455;
+    margin-left: 10px;
+}
+img {
+    transition: all 1s;
+}
+img:hover {
+    transform: scale(1.1);
+  
+} 

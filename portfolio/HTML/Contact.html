@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/contact.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/nav.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/footer.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="Projects.html">Projects</a></li>
+                <li><a href="Experience.html">Experience</a></li>
+                <li><a href="Education.html">Education</a></li>
+                <li><a href="Contact.html">Contact me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <form class="form-contain" method="get">
+            <div class="form-group">
+                <label for="first_name">First Name:</label>
+                <input type="text" id="first_name" name="first_name" required>
+            </div>
+            <div class="form-group">
+                <label for="last_name">Last Name:</label>
+                <input type="text" id="last_name" name="last_name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+    
+        <div class="form-group">
+            <label for="reason">Reason for contact:</label>
+            <input type="radio" name="reason" value="other" required>Other
+            <input type="radio" name="reason" value="job">Job
+            <input type="radio" name="reason" value="thesis">Thesis
+            <input type="radio" name="reason" value="meet and greet">Meet and Greet
+        </div>
+
+        <div class="form-group">
+            <label for="services">Services:</label>
+            <input type="radio" name="services" value="consulting" required>Consulting
+            <input type="radio" name="services" value="project" >Project
+            <input type="radio" name="services" value="design" >Design
+        </div>
+
+        <div class="form-group">
+            <label for="hiring">Are you contacting for hiring?</label>
+            <input type="radio" name="hiring" value="yes">Yes
+            <input type="radio" name="hiring" value="no">No
+        </div>
+
+        <div class="form-group">
+            <label for="job_position">Enter your job position:</label>
+            <select id="job_position" name="job_position">
+                <option value="HR">HR</option>
+                <option value="CEO">CEO</option>
+                <option value="manager">Manager</option>
+                <option value="Other">other</option>
+            </select>
+        </div>
+        <div class="formBtn">
+                <input id="submitBtn" type="submit" value="Submit">
+            </div>
+
+    </form>
+
+
+    <footer>
+        <div class="container">
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                email: abdullahallfahad333@gmail.com
+            </div>
+
+            <div class="social-media">
+                
+                <a href="https://www.facebook.com/abdullah.all.fahad.167474/"><img src="../Image/2021_Facebook_icon.jpg" alt="Facebook" width="30" height="30"></a>
+                <a href="https://www.linkedin.com/in/abdullah-all-fahad-2b0b1a1b6/"><img src="../Image/LI-In-Bug.png" alt="LinkedIn" width="30" height="30"></a>
+                <a href="https://github.com/Abdullah-All-Fahad"><img src="../Image/github-mark.png" alt="GitHub" width="30" height="30"></a>
+
+                </div>
+
+
+        </div>
+        <div class="copyright">
+            <p>© 2025 Abdullah All Fahad. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
